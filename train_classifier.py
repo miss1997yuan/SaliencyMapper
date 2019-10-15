@@ -76,4 +76,4 @@ for epoch in range(6):  # loop over the dataset multiple times
         loss.backward()
         optimizer.step()
     
-    save_checkpoint(black_box_func, filename='black_box_func.tar')
+    save_checkpoint(black_box_func, filename='black_box_func.pth')
