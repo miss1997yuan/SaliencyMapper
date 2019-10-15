@@ -10,12 +10,12 @@ from resnet import resnet
 def save_checkpoint(state, filename='black_box_func.pth'):
     torch.save(state, filename)
 #it seems wrong tar ,so convert to pth
-def load_checkpoint(net,optimizer,filename='black_box_func.pth'):
-    checkpoint = torch.load(filename)
-    net.load_state_dict(checkpoint['state_dict'])
-    optimizer.load_state_dict(checkpoint['optimizer'])
-    return net,optimizer
-
+#def load_checkpoint(net,optimizer,filename='black_box_func.pth'):
+ #   checkpoint = torch.load(filename)
+  #  net.load_state_dict(checkpoint['state_dict'])
+   # optimizer.load_state_dict(checkpoint['optimizer'])
+    #return net,optimizer
+#it has not been used for the code
 
 def cifar10():
     
